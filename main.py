@@ -49,13 +49,13 @@ def clear():
     timmy.pendown()
 
 
-"""setting up the controlling keys"""
+""" setting up the controlling keys"""
 screen.listen()
-screen.onkey(key='f', fun=move_forwards)
-screen.onkey(key='b', fun=move_backwards)
-screen.onkey(key='d', fun=clockwise)
+screen.onkey(key='Up', fun=move_forwards)
+screen.onkey(key='Down', fun=move_backwards)
+screen.onkey(key='Right', fun=clockwise)
 screen.onkey(key='c', fun=clear)
-screen.onkey(key='a', fun=counter_clockwise)
+screen.onkey(key='Left', fun=counter_clockwise)
 
 
 """setting up screen"""
